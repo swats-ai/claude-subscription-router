@@ -88,6 +88,7 @@ def call_claude_cli_streaming(context_prompt, model="opus"):
         
         cmd = [
             "claude",
+            "--dangerously-skip-permissions",
             "--model", model,
             context_prompt
         ]

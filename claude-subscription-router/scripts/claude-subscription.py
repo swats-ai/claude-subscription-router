@@ -112,7 +112,7 @@ def call_claude_cli(context_prompt, model="opus"):
         cmd = [
             "claude",
             "--print",
-            "--permission-mode", "bypassPermissions",
+            "--dangerously-skip-permissions",
             "--model", model,
             context_prompt
         ]
